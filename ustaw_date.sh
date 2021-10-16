@@ -6,7 +6,7 @@ ESCAPE_FILE=escape.txt
 
 SCRIPT=script_file.txt
 rm -f $SCRIPT
-DATE=$(date -v+5S +"%H %M %S %w %m %d %y")
+DATE=$(date -v+5S +"%H %M %S %w %d %m %y")
 cat <<EOF >${SCRIPT}
 sleep 5
 send G ${DATE}
